@@ -4,10 +4,10 @@ echo
 
 LONG=$(cat main.list | grep -oP '\t[0-9a-f]{8}' | wc -l)
 
-TOTAL=64
+TOTAL=256
 CNT=1
 
-echo -n "logic [N-1 : 0] ROM[0 : 63] = '{"
+echo -n "logic [N-1 : 0] ROM[0 : $((TOTAL-1))] = '{"
 
 cat main.list | grep -oP '\t[0-9a-f]{8}' | while true; do
     while read -r line; do

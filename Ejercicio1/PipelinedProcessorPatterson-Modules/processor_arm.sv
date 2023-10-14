@@ -53,7 +53,7 @@ module processor_arm #(
 
 
   imem instrMem (
-      .addr(IM_address[7:2]),
+      .addr(IM_address[9:2]),
       .q(q)
   );
 
