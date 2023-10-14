@@ -50,8 +50,8 @@ module regfile #(
 
   // read (async)
   always_comb begin
-    rd1 = X[ra1];
-    rd2 = X[ra2];
+    rd1 = (we3 && wa3 !== 31 && wa3 === ra1 ? wd3 : X[ra1]);
+    rd2 = (we3 && wa3 !== 31 && wa3 === ra2 ? wd3 : X[ra2]);
   end
 
   // write (sync)

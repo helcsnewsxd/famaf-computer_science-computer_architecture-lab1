@@ -99,25 +99,13 @@ module regfile_tb ();
       end
 
       if ({rd1, rd2} !== {rd1_expected, rd2_expected}) begin
-        if (test_type === 0)
-          $display(
-              "Error in %s test number %d with \
-			        input = { we3 = %b, ra1 = %d, ra2 = %d, wa3 = %d, wd3 = %d } and \
-			        output = { rd1 = %d, rd2 = %d } --> \
-			        The expected output was { rd1_expected = %d, rd2_expected = %d }\
-			        ",
-              (test_type ? "writing" : "initialization"),
-              test_number,
-              (test_type ? 1'b1 : 1'b0),
-              ra1,
-              ra2,
-              wa3,
-              wd3,
-              rd1,
-              rd2,
-              rd1_expected,
-              rd2_expected
-          );
+        $display("Error in %s test number %d with \
+            input = { we3 = %b, ra1 = %d, ra2 = %d, wa3 = %d, wd3 = %d } and \
+            output = { rd1 = %d, rd2 = %d } --> \
+            The expected output was { rd1_expected = %d, rd2_expected = %d }\
+            ", (test_type ? "writing" : "initialization"),
+                 test_number, (test_type ? 1'b1 : 1'b0), ra1, ra2, wa3, wd3, rd1, rd2,
+                 rd1_expected, rd2_expected);
         cnt_errors++;
       end
       test_number++;
