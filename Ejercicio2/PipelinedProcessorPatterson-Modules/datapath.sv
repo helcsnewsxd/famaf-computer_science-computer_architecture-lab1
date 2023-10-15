@@ -60,11 +60,12 @@ module datapath #(
       .signImm_D(signImm_D),
       .readData1_D(readData1_D),
       .readData2_D(readData2_D),
-      .wa3_D(qMEM_WB[4:0])
-      .data_hazard(data_hazard)
+      .wa3_D(qMEM_WB[4:0]),
+      .data_hazard(data_hazard),
+      .ra1(ra1),
+      .ra2(ra2)
   );
 
-  // HAZARD
   assign ID_EX_control_signals = {
       AluSrc,
       AluControl,
@@ -75,6 +76,7 @@ module datapath #(
       memtoReg
   };
 
+  // HAZARD
   mux2 #(7) (
       .d0(ID_EX_control_signals),
       .d1(1'b0),
@@ -82,11 +84,13 @@ module datapath #(
       .y(ID_EX_control_signals_hazard)
   );
 
-  flopr #(271) ID_EX (
+  flopr #(281) ID_EX (
       .clk(clk),
       .reset(reset),
       .enable(1'b1),
       .d({
+        ra1,
+        ra2,
         ID_EX_control_signals,
         qIF_ID[95:32],
         signImm_D,
@@ -100,11 +104,17 @@ module datapath #(
 
   execute #(64) EXECUTE (
       .AluSrc(qID_EX[270]),
+      .regWrite_EX_MEM(qEX_MEM[201]),
+      .regWrite_MEM_WB(qMEM_WB[133]),
       .AluControl(qID_EX[269:266]),
       .PC_E(qID_EX[260:197]),
       .signImm_E(qID_EX[196:133]),
       .readData1_E(qID_EX[132:69]),
       .readData2_E(qID_EX[68:5]),
+      .ra1_ID_EX(qID_EX[280:276]),
+      .ra2_ID_EX(qID_EX[275:271]),
+      .rd_EX_MEM(qEX_MEM[4:0]),
+      .rd_MEM_WB(qMEM_WB[4:0]),
       .PCBranch_E(PCBranch_E),
       .aluResult_E(aluResult_E),
       .writeData_E(writeData_E),

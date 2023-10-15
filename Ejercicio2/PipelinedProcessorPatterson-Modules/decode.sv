@@ -12,7 +12,9 @@ module decode #(
     readData1_D,
     readData2_D,
     input logic [4:0] wa3_D,
-    output logic data_hazard
+    output logic data_hazard,
+    output logic [4:0] ra1,
+    ra2
 );  // Eliminar para single cycle processor
 
   // HAZARD DETECTION UNIT (HDU)
@@ -21,7 +23,7 @@ module decode #(
 
   // ----------------------
 
-  logic [4:0] ra2;
+  assign ra1 = instr_D[9:5];
 
   mux2 #(5) ra2mux (
       .d0(instr_D[20:16]),
@@ -33,7 +35,7 @@ module decode #(
   regfile registers (
       .clk(clk),
       .we3(regWrite_D),
-      .ra1(instr_D[9:5]),
+      .ra1(ra1),
       .ra2(ra2),
       .wa3(wa3_D),
       .wd3(writeData3_D),
