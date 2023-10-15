@@ -30,7 +30,7 @@ module processor_tb ();
     reset = 1;
     dump = 0;
     #20 reset = 0;
-    #20000 dump = 1;
+    #50000 dump = 1;
     #20 $stop;
   end
 endmodule
