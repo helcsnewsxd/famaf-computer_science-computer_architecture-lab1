@@ -3,7 +3,6 @@ module execute #(
     parameter N = 64
 ) (
     input logic AluSrc,
-    MOVZ,
     input logic [3 : 0] AluControl,
     input logic [N-1 : 0] PC_E,
     signImm_E,
