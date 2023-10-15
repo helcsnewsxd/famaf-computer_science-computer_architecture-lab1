@@ -13,7 +13,6 @@ module datapath #(
     input logic memWrite,
     input logic regWrite,
     input logic memtoReg,
-    input logic MOVZ,
     input logic [31:0] IM_readData,
     input logic [N-1:0] DM_readData,
     output logic [N-1:0] IM_addr,
@@ -28,7 +27,7 @@ module datapath #(
   logic [N-1:0] signImm_D, readData1_D, readData2_D;
   logic zero_E;
   logic [95:0] qIF_ID;
-  logic [271:0] qID_EX;
+  logic [270:0] qID_EX;
   logic [202:0] qEX_MEM;
   logic [134:0] qMEM_WB;
 
@@ -62,12 +61,11 @@ module datapath #(
   );
 
 
-  flopr #(272) ID_EX (
+  flopr #(271) ID_EX (
       .clk(clk),
       .reset(reset),
       .d({
         AluSrc,
-        MOVZ,
         AluControl,
         Branch,
         memRead,
@@ -85,8 +83,7 @@ module datapath #(
 
 
   execute #(64) EXECUTE (
-      .AluSrc(qID_EX[271]),
-      .MOVZ(qID_EX[270]),
+      .AluSrc(qID_EX[270]),
       .AluControl(qID_EX[269:266]),
       .PC_E(qID_EX[260:197]),
       .signImm_E(qID_EX[196:133]),

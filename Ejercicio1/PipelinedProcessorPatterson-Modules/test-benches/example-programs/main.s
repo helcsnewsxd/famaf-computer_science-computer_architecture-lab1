@@ -92,9 +92,26 @@ L2: SUB X2, X2, X1
         ADD XZR, XZR, XZR
     STUR X25, [X30, #-8] // MEM 21:0xA (= MEM 9)
     
+    // PRUEBAS PARA MOVZ
+
     MOVZ X29, #0xFFFF, LSL #0
         ADD XZR, XZR, XZR
         ADD XZR, XZR, XZR
     STUR X29, [X30, #0] // MEM 22: 0xFFFF
+
+    MOVZ X29, #0xFFFF, LSL #16
+        ADD XZR, XZR, XZR
+        ADD XZR, XZR, XZR
+    STUR X29, [X30, #8] // MEM 23: 0xFFFF0000
+
+    MOVZ X29, #0xFFFF, LSL #32
+        ADD XZR, XZR, XZR
+        ADD XZR, XZR, XZR
+    STUR X29, [X30, #16] // MEM 24: 0xFFFF00000000
+
+    MOVZ X29, #0xFFFF, LSL #48
+        ADD XZR, XZR, XZR
+        ADD XZR, XZR, XZR
+    STUR X29, [X30, #24] // MEM 25: 0xFFFF000000000000
 
 finloop: CBZ XZR, finloop

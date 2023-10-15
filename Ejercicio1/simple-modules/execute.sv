@@ -15,10 +15,9 @@ module execute #(
     output logic zero_E
 );
 
-  logic [N-1 : 0] y0_internal, y1_internal;
-  logic [N-1 : 0] readData2_E_real;
+  logic [N-1 : 0] y0_internal, y1_internal, y2_internal;
 
-  sl2 #(N) Shif_left_2 (
+  sl #(N) Shif_left_2 (
       .a(signImm_E),
       .y(y0_internal)
   );
