@@ -12,11 +12,11 @@ module imem_tb ();
   int fd, error_code, cnt_tests, test_number, cnt_errors;
   string input_file_path, line;
 
-  logic [5 : 0] addr_in[0 : CNT_MAX_TESTS];
+  logic [7 : 0] addr_in[0 : CNT_MAX_TESTS];
   logic [31 : 0] q_in[0 : CNT_MAX_TESTS];
 
   // Module connections
-  logic [5 : 0] addr;
+  logic [7 : 0] addr;
   logic [31 : 0] q;
 
   imem #(N) dut (

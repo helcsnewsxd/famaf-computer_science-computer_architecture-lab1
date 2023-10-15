@@ -21,6 +21,22 @@ def gen(test_number, negative):
         y = imm
         if negative:
             y += ((1 << 45) - 1) << 19
+    
+    # MOVZ (without NEG VALUES)
+    elif (test_number >> 2) == 0b110_1001_01:
+        lsl = test_number - ((test_number >> 2) << 2)
+
+        imm = getrandbits(15)
+        y = imm
+        if lsl == 0b01:
+            y <<= 16
+        elif lsl == 0b10:
+            y <<= 32
+        elif lsl == 0b11:
+            y <<= 48
+
+        a = (test_number << 21) + (imm << 5) + getrandbits(5)
+
     # Not implemented instructions
     else:
         a = (test_number << 21) + getrandbits(21)
