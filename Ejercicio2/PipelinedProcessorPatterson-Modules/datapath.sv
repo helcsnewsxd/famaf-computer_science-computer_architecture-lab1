@@ -19,9 +19,9 @@ module datapath #(
     DM_addr,
     DM_writeData,
     output logic DM_writeEnable,
-    DM_readEnable
+    DM_readEnable,
+    data_hazard
 );
-
   logic PCSrc;
   logic [N-1:0] PCBranch_E, aluResult_E, writeData_E, writeData3;
   logic [N-1:0] signImm_D, readData1_D, readData2_D;
@@ -30,11 +30,13 @@ module datapath #(
   logic [270:0] qID_EX;
   logic [202:0] qEX_MEM;
   logic [134:0] qMEM_WB;
+  logic [6 : 0] ID_EX_control_signals, ID_EX_control_signals_hazard;
 
   fetch #(64) FETCH (
       .PCSrc_F(PCSrc),
       .clk(clk),
       .reset(reset),
+      .enable(!data_hazard),
       .PCBranch_F(qEX_MEM[197:134]),
       .imem_addr_F(IM_addr)
   );
@@ -43,6 +45,7 @@ module datapath #(
   flopr #(96) IF_ID (
       .clk(clk),
       .reset(reset),
+      .enable(!data_hazard),
       .d({IM_addr, IM_readData}),
       .q(qIF_ID)
   );
@@ -58,20 +61,33 @@ module datapath #(
       .readData1_D(readData1_D),
       .readData2_D(readData2_D),
       .wa3_D(qMEM_WB[4:0])
+      .data_hazard(data_hazard)
   );
 
+  // HAZARD
+  assign ID_EX_control_signals = {
+      AluSrc,
+      AluControl,
+      Branch,
+      memRead,
+      memWrite,
+      regWrite,
+      memtoReg
+  };
+
+  mux2 #(7) (
+      .d0(ID_EX_control_signals),
+      .d1(1'b0),
+      .s(data_hazard),
+      .y(ID_EX_control_signals_hazard)
+  );
 
   flopr #(271) ID_EX (
       .clk(clk),
       .reset(reset),
+      .enable(1'b1),
       .d({
-        AluSrc,
-        AluControl,
-        Branch,
-        memRead,
-        memWrite,
-        regWrite,
-        memtoReg,
+        ID_EX_control_signals,
         qIF_ID[95:32],
         signImm_D,
         readData1_D,
@@ -99,6 +115,7 @@ module datapath #(
   flopr #(203) EX_MEM (
       .clk(clk),
       .reset(reset),
+      .enable(1'b1),
       .d({qID_EX[265:261], PCBranch_E, zero_E, aluResult_E, writeData_E, qID_EX[4:0]}),
       .q(qEX_MEM)
   );
@@ -122,6 +139,7 @@ module datapath #(
   flopr #(135) MEM_WB (
       .clk(clk),
       .reset(reset),
+      .enable(1'b1),
       .d({qEX_MEM[199:198], qEX_MEM[132:69], DM_readData, qEX_MEM[4:0]}),
       .q(qMEM_WB)
   );

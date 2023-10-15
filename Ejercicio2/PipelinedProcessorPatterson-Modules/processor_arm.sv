@@ -13,7 +13,7 @@ module processor_arm #(
 
   logic [31:0] q;
   logic [ 3:0] AluControl;
-  logic reg2loc, regWrite, AluSrc, Branch, memtoReg, memRead, memWrite;
+  logic reg2loc, regWrite, AluSrc, Branch, memtoReg, memRead, memWrite, data_hazard;
   logic [N-1:0] DM_readData, IM_address;  //DM_addr, DM_writeData
   logic DM_readEnable;  //DM_writeEnable
   logic [10:0] instr;
@@ -42,6 +42,7 @@ module processor_arm #(
       .memWrite(memWrite),
       .regWrite(regWrite),
       .memtoReg(memtoReg),
+      .data_hazard(data_hazard),
       .IM_readData(q),
       .DM_readData(DM_readData),
       .IM_addr(IM_address),
@@ -72,6 +73,7 @@ module processor_arm #(
   flopr #(11) IF_ID_TOP (
       .clk(CLOCK_50),
       .reset(reset),
+      .enable(data_hazard),
       .d(q[31:21]),
       .q(instr)
   );

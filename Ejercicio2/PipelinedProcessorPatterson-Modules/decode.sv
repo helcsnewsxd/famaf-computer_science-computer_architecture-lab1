@@ -11,8 +11,15 @@ module decode #(
     output logic [N-1:0] signImm_D,
     readData1_D,
     readData2_D,
-    input logic [4:0] wa3_D
+    input logic [4:0] wa3_D,
+    output logic data_hazard
 );  // Eliminar para single cycle processor
+
+  // HAZARD DETECTION UNIT (HDU)
+
+  assign data_hazard = (memRead_ID_EX && (rd_ID_EX === ra1 || rd_ID_EX === ra2));
+
+  // ----------------------
 
   logic [4:0] ra2;
 
