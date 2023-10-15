@@ -92,4 +92,9 @@ L2: SUB X2, X2, X1
         ADD XZR, XZR, XZR
     STUR X25, [X30, #-8] // MEM 21:0xA (= MEM 9)
     
+    MOVZ X29, #0xFFFF, LSL #0
+        ADD XZR, XZR, XZR
+        ADD XZR, XZR, XZR
+    STUR X29, [X30, #0] // MEM 22: 0xFFFF
+
 finloop: CBZ XZR, finloop

@@ -9,7 +9,8 @@ module controller (
     Branch,
     memtoReg,
     memRead,
-    memWrite
+    memWrite,
+    MOVZ
 );
 
   logic [1:0] AluOp_s;
@@ -23,7 +24,8 @@ module controller (
       .MemRead(memRead),
       .MemWrite(memWrite),
       .Branch(Branch),
-      .ALUOp(AluOp_s)
+      .ALUOp(AluOp_s),
+      .MOVZ(MOVZ)
   );
 
 
