@@ -1,0 +1,38 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/mux4.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/forwarding_unit.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/hazard_detection_unit.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/writeback.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/processor_arm.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/memory.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/decode.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/datapath.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/controller.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/aludec.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/sl.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/signext.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/regfile.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/mux2.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/maindec.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/imem.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/flopr.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/fetch.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/execute.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/alu.sv}
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/adder.sv}
+vcom -2008 -work work {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/dmem.vhd}
+
+vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches {/home/helcsnewsxd/Documentos/famaf/arqui/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches/processor_tb.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
+
+add wave *
+view structure
+view signals
+run -all

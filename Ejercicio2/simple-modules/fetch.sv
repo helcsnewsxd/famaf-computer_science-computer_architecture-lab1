@@ -5,7 +5,7 @@ module fetch #(
     input logic PCSrc_F,
     clk,
     reset,
-    enable,
+    data_hazard,
     input logic [N-1 : 0] PCBranch_F,
     output logic [N-1 : 0] imem_addr_F
 );
@@ -22,7 +22,7 @@ module fetch #(
   flopr #(N) PC (
       .clk(clk),
       .reset(reset),
-      .enable(enable),
+      .enable(~data_hazard),
       .d(d_internal),
       .q(imem_addr_F)
   );

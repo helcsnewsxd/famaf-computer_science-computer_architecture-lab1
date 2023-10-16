@@ -3,45 +3,32 @@ module execute #(
     parameter N = 64
 ) (
     input logic AluSrc,
-    regWrite_EX_MEM,  // FORWARDING
-    regWrite_MEM_WB,  // FORWARDING
     input logic [3 : 0] AluControl,
     input logic [N-1 : 0] PC_E,
     signImm_E,
     readData1_E,
     readData2_E,
-    input logic [4 : 0] ra1_ID_EX, // FORWARDING
-    ra2_ID_EX, // FORWARDING
-    rd_EX_MEM,  // FORWARDING
-    rd_MEM_WB,  // FORWARDING
     output logic [N-1 : 0] PCBranch_E,
     aluResult_E,
     writeData_E,
-    output logic zero_E
+    output logic zero_E,
+
+    // FORWARDING
+    input logic [4:0] IF_ID_rn,
+    IF_ID_rm,
+    ID_EX_rn,
+    ID_EX_rm,
+    EX_MEM_rd,
+    MEM_WB_rd,
+    input logic EX_MEM_regWrite,
+    MEM_WB_regWrite,
+    input logic [N-1 : 0] EX_MEM_aluResult,
+    MEM_WB_aluResult
 );
 
   logic [N-1 : 0] y0_internal, y1_internal, y2_internal;
-
-  // FORWARDING UNIT
-
-  logic [2 : 0] forwardingA, forwardingB;
-
-  // EX hazard
-  
-  if(regWrite_EX_MEM && rd_EX_MEM !== 31 && rd_EX_MEM === ra2_ID_EX)
-    forwardingA = 2'b10;
-  
-  if(regWrite_EX_MEM && rd_EX_MEM !== 31 && rd_EX_MEM === ra1_ID_EX)
-    forwardingB = 2'b10;
-
-  // MEM hazard
-  if((regWrite_MEM_WB && rd_MEM_WB !== 31 && !(regWrite_EX_MEM && (rd_EX_MEM !== 31)) && rd_EX_MEM !== ra2_ID_EX) && rd_MEM_WB === ra2_ID_EX)
-    forwardingA = 2'b01;
-
-  IF((regWrite_MEM_WB && rd_MEM_WB !== 31 && !(regWrite_EX_MEM && (rd_EX_MEM !== 31)) && rd_EX_MEM !== ra1_ID_EX) AND rd_MEM_WB === ra1_ID_EX)
-    forwardingB = 2'b01;
-
-  // ---------------
+  logic [2:0] forwardA, forwardB;
+  logic [N-1 : 0] ALU_a, ALU_b;
 
   sl #(N) Shif_left_2 (
       .a(signImm_E),
@@ -61,9 +48,42 @@ module execute #(
       .y (y1_internal)
   );
 
+  // ------------------ FORWARDING ------------------
+
+  FORWARDING_UNIT forwarding_unit (
+      .EX_MEM_regWrite(EX_MEM_regWrite),
+      .MEM_WB_regWrite(MEM_WB_regWrite),
+      .ID_EX_rn1(ID_EX_rn),
+      .ID_EX_rm2(ID_EX_rm),
+      .EX_MEM_rd(EX_MEM_rd),
+      .MEM_WB_rd(MEM_WB_rd),
+      .forwardA(forwardA),
+      .forwardB(forwardB)
+  );
+
+  mux4 #(N) MUX_forwardA (
+      .d0(readData1_E),
+      .d1(MEM_WB_aluResult),
+      .d2(EX_MEM_aluResult),
+      .d3(0),
+      .s (forwardA),
+      .y (ALU_a)
+  );
+
+  mux4 #(N) MUX_forwardB (
+      .d0(y1_internal),
+      .d1(MEM_WB_aluResult),
+      .d2(EX_MEM_aluResult),
+      .d3(0),
+      .s (forwardB),
+      .y (ALU_b)
+  );
+
+  // ------------------------------------------------
+
   alu #(N) ALU (
-      .a(readData1_E),
-      .b(y1_internal),
+      .a(ALU_a),
+      .b(ALU_b),
       .ALUControl(AluControl),
       .result(aluResult_E),
       .zero(zero_E)
