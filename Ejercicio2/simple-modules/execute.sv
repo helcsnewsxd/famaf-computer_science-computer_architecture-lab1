@@ -27,7 +27,7 @@ module execute #(
 );
 
   logic [N-1 : 0] y0_internal, y1_internal, y2_internal;
-  logic [2:0] forwardA, forwardB;
+  logic [1:0] forwardA, forwardB;
   logic [N-1 : 0] ALU_a, ALU_b;
 
   sl #(N) Shif_left_2 (
@@ -39,13 +39,6 @@ module execute #(
       .a(PC_E),
       .b(y0_internal),
       .y(PCBranch_E)
-  );
-
-  mux2 #(N) MUX (
-      .d0(readData2_E),
-      .d1(signImm_E),
-      .s (AluSrc),
-      .y (y1_internal)
   );
 
   // ------------------ FORWARDING ------------------
@@ -71,15 +64,22 @@ module execute #(
   );
 
   mux4 #(N) MUX_forwardB (
-      .d0(y1_internal),
+      .d0(readData2_E),
       .d1(MEM_WB_aluResult),
       .d2(EX_MEM_aluResult),
       .d3(0),
       .s (forwardB),
-      .y (ALU_b)
+      .y (y1_internal)
   );
 
   // ------------------------------------------------
+
+  mux2 #(N) MUX (
+      .d0(y1_internal),
+      .d1(signImm_E),
+      .s (AluSrc),
+      .y (ALU_b)
+  );
 
   alu #(N) ALU (
       .a(ALU_a),
@@ -89,6 +89,6 @@ module execute #(
       .zero(zero_E)
   );
 
-  assign writeData_E = readData2_E;
+  assign writeData_E = y1_internal;
 
 endmodule
