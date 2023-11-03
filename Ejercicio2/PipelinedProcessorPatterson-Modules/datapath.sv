@@ -115,7 +115,7 @@ module datapath #(
       .EX_MEM_regWrite(qEX_MEM[199]),
       .EX_MEM_rd(qEX_MEM[4:0]),
       .EX_MEM_aluResult(qEX_MEM[132:69]),
-      .MEM_WB_regWrite(qMEM_WB[133]),
+      .MEM_WB_regWrite(qMEM_WB[134]),
       .MEM_WB_rd(qMEM_WB[4:0]),
       .MEM_WB_aluResult(qMEM_WB[132:69])
   );
