@@ -11,217 +11,217 @@
 # 
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/mux4.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:22 on Nov 10,2023
+# Start time: 17:20:01 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/mux4.sv 
 # -- Compiling module mux4
 # 
 # Top level modules:
 # 	mux4
-# End time: 12:36:22 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:01 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/forwarding_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:22 on Nov 10,2023
+# Start time: 17:20:01 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/forwarding_unit.sv 
 # -- Compiling module FORWARDING_UNIT
 # 
 # Top level modules:
 # 	FORWARDING_UNIT
-# End time: 12:36:22 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:01 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/hazard_detection_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:22 on Nov 10,2023
+# Start time: 17:20:01 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/hazard_detection_unit.sv 
 # -- Compiling module HDU
 # 
 # Top level modules:
 # 	HDU
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:01
+# End time: 17:20:01 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/writeback.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:01 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/writeback.sv 
 # -- Compiling module writeback
 # 
 # Top level modules:
 # 	writeback
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/processor_arm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/processor_arm.sv 
 # -- Compiling module processor_arm
 # 
 # Top level modules:
 # 	processor_arm
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/memory.sv 
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/decode.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/decode.sv 
 # -- Compiling module decode
 # 
 # Top level modules:
 # 	decode
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/aludec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/aludec.sv 
 # -- Compiling module aludec
 # 
 # Top level modules:
 # 	aludec
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/sl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/sl.sv 
 # -- Compiling module sl
 # 
 # Top level modules:
 # 	sl
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/signext.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/signext.sv 
 # -- Compiling module signext
 # 
 # Top level modules:
 # 	signext
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 12:36:23 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:23 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:01
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/maindec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/maindec.sv 
 # -- Compiling module maindec
 # 
 # Top level modules:
 # 	maindec
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:02 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:02 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/fetch.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/fetch.sv 
 # -- Compiling module fetch
 # 
 # Top level modules:
 # 	fetch
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/execute.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/execute.sv 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/simple-modules/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/dmem.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vcom -reportprogress 300 -2008 -work work /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/dmem.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -232,23 +232,23 @@
 # -- Compiling entity dmem
 # -- Compiling architecture behave of dmem
 # ** Warning: /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/dmem.vhd(30): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 # vlog -sv -work work +incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches {/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches/processor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches" /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches/processor_tb.sv 
 # -- Compiling module processor_tb
 # 
 # Top level modules:
 # 	processor_tb
-# End time: 12:36:24 on Nov 10,2023, Elapsed time: 0:00:00
+# End time: 17:20:03 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" processor_tb 
-# Start time: 12:36:24 on Nov 10,2023
+# Start time: 17:20:03 on Nov 10,2023
 # Loading sv_std.std
 # Loading work.processor_tb
 # Loading work.processor_arm
@@ -301,5 +301,5 @@
 # Break in Module processor_tb at /home/helcsnewsxd/Documentos/Arqui-Labo1/Laboratorio-ARMv8-en-SystemVerilog---Arquitectura-del-Computador/Ejercicio2/PipelinedProcessorPatterson-Modules/test-benches/processor_tb.sv line 34
 # 
 # stdin: <EOF>
-# End time: 12:36:31 on Nov 10,2023, Elapsed time: 0:00:07
+# End time: 17:20:17 on Nov 10,2023, Elapsed time: 0:00:14
 # Errors: 0, Warnings: 5
