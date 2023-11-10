@@ -43,6 +43,35 @@ set_global_assignment -name TOP_LEVEL_ENTITY processor_arm
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:48:25  OCTOBER 15, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH processor_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME processor_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id processor_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME processor_tb -section_id processor_tb
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/signext_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/regfile_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/maindec_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/imem_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/flopr_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/fetch_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/execute_tb.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/test-benches/alu_tb.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "PipelinedProcessorPatterson-Modules/test-benches/processor_tb.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "PipelinedProcessorPatterson-Modules/writeback.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "PipelinedProcessorPatterson-Modules/processor_arm.sv"
@@ -63,28 +92,39 @@ set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/fetch.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/execute.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/alu.sv"
 set_global_assignment -name SYSTEMVERILOG_FILE "simple-modules/adder.sv"
-set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH processor_tb -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME processor_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id processor_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME processor_tb -section_id processor_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME alu_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME alu_tb -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/alu_tb.sv" -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME execute_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id execute_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME execute_tb -section_id execute_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/execute_tb.sv" -section_id execute_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME fetch_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id fetch_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME fetch_tb -section_id fetch_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/fetch_tb.sv" -section_id fetch_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME flopr_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id flopr_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME flopr_tb -section_id flopr_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/flopr_tb.sv" -section_id flopr_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME imem_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id imem_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME imem_tb -section_id imem_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/imem_tb.sv" -section_id imem_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME maindec_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id maindec_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME maindec_tb -section_id maindec_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/maindec_tb.sv" -section_id maindec_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME regfile_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id regfile_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME regfile_tb -section_id regfile_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/regfile_tb.sv" -section_id regfile_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME signext_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id signext_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME signext_tb -section_id signext_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE "simple-modules/test-benches/signext_tb.sv" -section_id signext_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE "PipelinedProcessorPatterson-Modules/test-benches/processor_tb.sv" -section_id processor_tb
-set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
-set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
