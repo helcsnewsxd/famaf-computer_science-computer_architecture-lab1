@@ -15,17 +15,13 @@ module FORWARDING_UNIT (
     forwardA = 2'b00;
     forwardB = 2'b00;
 
-    // EX Hazard
+    // Forward A (EX, MEM)
     if (EX_MEM_regWrite && (EX_MEM_rd !== 31) && (EX_MEM_rd === ID_EX_rn1)) forwardA = 2'b10;
+    else if (MEM_WB_regWrite && (MEM_WB_rd !== 31) && (MEM_WB_rd === ID_EX_rn1)) forwardA = 2'b01;
 
+    // Forward B (EX, MEM)
     if (EX_MEM_regWrite && (EX_MEM_rd !== 31) && (EX_MEM_rd === ID_EX_rm2)) forwardB = 2'b10;
-
-    // MEM Hazard
-    if (MEM_WB_regWrite && (MEM_WB_rd !== 31) && ~(EX_MEM_regWrite && (EX_MEM_rd !== 31) && EX_MEM_rd !== ID_EX_rn1) && (MEM_WB_rd === ID_EX_rn1))
-      forwardA = 2'b01;
-
-    if (MEM_WB_regWrite && (MEM_WB_rd !== 31) && ~(EX_MEM_regWrite && (EX_MEM_rd !== 31) && EX_MEM_rd !== ID_EX_rm2) && (MEM_WB_rd === ID_EX_rm2))
-      forwardB = 2'b01;
+    else if (MEM_WB_regWrite && (MEM_WB_rd !== 31) && (MEM_WB_rd === ID_EX_rm2)) forwardB = 2'b01;
   end
 
 endmodule
