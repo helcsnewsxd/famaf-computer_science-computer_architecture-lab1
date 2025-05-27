@@ -1,3 +1,10 @@
+> [!note]
+> This repository contains a SystemVerilog implementation of a simplified pipelined ARMv8 processor, extended with MOVZ instruction support, a hazard detection unit, and a forwarding unit. The goal is to apply a forwarding-stall mechanism to handle data hazards effectively.
+>
+> It was developed as part of the Computer Architecture course at FAMAF – Universidad Nacional de Córdoba.
+>
+> The code, documentation, and comments are in Spanish, as they were written for academic purposes and submission.
+
 # Arquitectura del Computador (2023): Laboratorio ARMv8 en SystemVerilog
 
 El presente repositorio contiene todo el material referido al primer proyecto de la asignatura "Arquitectura del Computador" (2023) de la Licenciatura en Ciencias de la Computación de la Facultad de Matemática, Astronomía, Física y Computación (FaMAF) de la Universidad Nacional de Córdoba (UNC).
